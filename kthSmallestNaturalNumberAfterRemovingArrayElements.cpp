@@ -8,6 +8,10 @@ int ksmallest(int arr[],int n,int k)
     {
       k++;
     }
+    else
+    {
+      break;
+    }
   }
   
   return k;
