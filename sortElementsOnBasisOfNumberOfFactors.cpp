@@ -6,7 +6,25 @@ static bool comp(pair<int,int>&a,pair<int,int>&b)
   }
   return a.first > b.first;
 }
-
+int number(int a)
+{
+  int count=0;
+  int sq=sqrt(a);
+  
+  if(sq*sq == a)
+  {
+    count++;
+  }
+  
+  for(int i=1;i<sqrt(n);i++)
+  {
+    if(a % i == 0)
+    {
+      count+=2;
+    }
+  }
+  return count;
+}
 void sortOnFactors(vector<int>&arr)
 {
   vector<pair<int,int>>facts;
